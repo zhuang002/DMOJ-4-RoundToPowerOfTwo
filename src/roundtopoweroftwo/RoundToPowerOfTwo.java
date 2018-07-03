@@ -21,21 +21,19 @@ public class RoundToPowerOfTwo {
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < 5; i++) {
             int a = sc.nextInt();
-            
-            int powerOf2=1;
-            int distance=1-a;
-            while (powerOf2<a) {
-                distance=a-powerOf2;
-                powerOf2*=2;
+
+            int powerOf2 = 1;
+            int distance = 1 - a;
+            while (powerOf2 < a) {
+                distance = a - powerOf2;
+                powerOf2 *= 2;
             }
-            if (distance<0 || distance>=powerOf2-a) {
+            if (distance < 0 || distance >= powerOf2 - a) {
                 System.out.println(powerOf2);
             } else {
-                System.out.println(powerOf2/2);
+                System.out.println(powerOf2 / 2);
             }
-            
         }
-
     }
 
 }
